@@ -1,0 +1,134 @@
+.form{
+	background-color:#a3b0ff;
+	text-align: center;
+	width: 50%;
+	margin: 0 .50813%;
+	float: center;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+
+select{
+	border:2px black solid;
+}
+ 
+h4{
+	float:left;
+	float:top;
+	position: absolute;
+	padding-left:3%;
+	font-family:  Gill Sans Extrabold, sans-serif;
+	font-size: 25px;
+	text-shadow: 1.2px 1.2px ;
+}
+
+#FormData{
+	padding-top:8%;
+	padding-bottom:20px;
+
+}
+
+.labelAndInput{
+
+
+}
+
+#sbmButton{
+	margin-bottom:10px;
+	margin-right:10px;
+	margin-top:10px;
+	float:right;
+	float:bottom;
+	padding: 10px;
+	background-color:#faef16;
+	border: 2px black solid;
+	border-radius: 10px;
+}
+
+#sbmButton:hover{
+
+	background-color:#fad764;
+}
+
+#sbmButton:focus{
+	background-color:#d1a411;
+}
+
+/*#sbmButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
+*/
+ 
+
+#sbmButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#sbmButton  span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#sbmButton:hover span {
+  padding-right: 25px;
+}
+
+#sbmButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#GradeAndSchoolName , #GradeAndSchoolName2{
+	visibility:hidden;
+	position:absolute;
+}
+
+#GradeAndSchoolName.makeVisible , #GradeAndSchoolName2.makeVisible {
+	visibility:visible;
+	position: relative;
+}
+
+.labelAndInput i{
+		position: absoulute;
+		color: #bd0808;
+		visibility:hidden;
+		padding-left: 10px;
+}
+
+.labelAndInput small{
+		position: relative;
+		visibility:hidden;
+		padding-left:20px;
+}
+
+.labelAndInput.success input , .labelAndInput.success select{
+		border:1px green solid;
+}
+
+.labelAndInput.error input, .labelAndInput.error select{
+		border:4px black solid;
+}
+	 
+.labelAndInput.success>i.fa-check-circle {
+		visibility: visible;
+		color:green;
+}
+
+.labelAndInput.error>i.fa-times-circle {
+		visibility:visible;
+		color:red;
+}
+
+.labelAndInput.error>small{
+		visibility:visible;
+}

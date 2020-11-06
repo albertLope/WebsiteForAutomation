@@ -1,0 +1,52 @@
+body {
+		background-color: #e6e6ff;
+}
+
+.logo { 
+		width: 140px;
+		height: 140px;
+		background-color: black;
+		position: relative;
+}
+
+
+#homeButton{
+	
+		background-color: #006fcf;
+		color:black;
+		text-align: center;
+		border: solid;
+		border-radius: 10px;
+		font-size: 16px;
+		padding: 5px 16px;
+		float:right;
+		margin-left:5px;
+		margin-top:10px;
+		position: relative;
+}
+
+
+.text{
+	background-color: #ffffff;
+	width: 50%;
+	text-align: center;
+	border-radius: 10px;
+	border: solid;
+	width: 60.65041%;
+	margin: 0.50813%;
+	margin: auto;
+}
+
+.line{
+	
+	display: block; 
+	height: 1px;
+    border: 0;
+	border-top: 1px solid #6600ff;
+    width= 20%;
+    size= 30;
+    align= center;
+
+
+
+}

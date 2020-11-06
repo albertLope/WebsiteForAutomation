@@ -1,0 +1,134 @@
+
+
+
+.container{
+
+	text-align: center;
+	background-color: #DAEAFE;
+	width: 50%;
+	margin: 0 .50813%;
+	float: center;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	border: solid;
+	border-color: purple;
+	 
+}
+
+.formInput {
+	border: 3px solid brown;
+	width: 300px;
+	height: 20px;
+}
+
+
+input::placeholder{
+	text-align: center;
+}
+  
+h2{
+	font-family:Bradley Hand, cursive;
+	text-align:left;
+	padding-top: 10px;
+	padding-left: 30px;
+
+
+}
+
+.radio1{
+		padding-left: 20px;
+}
+
+.submitButton:hover{
+
+	background-color:#51507a;
+}
+
+.submitButton{
+	
+	height:30px;
+	width: 100px;
+	margin-top: 30px;
+	text-align:center;
+    margin-left: 50%;
+	margin-bottom: 10px;
+	border: 3px solid black;
+}
+ 
+.labelAndInput{
+	font-family:Comic Sans MS;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.labelAndInput i{
+		position: absolute;
+		color: #bd0808;
+		visibility:hidden;
+		padding-left: 10px;
+}
+
+.labelAndInput small{
+		position: relative;
+		visibility:hidden;
+		padding-left:20px;
+}
+
+.labelAndInput.success input , .labelAndInput.success select{
+		border-color: green;
+}
+
+.labelAndInput.error input, .labelAndInput.error select{
+		border-color: red;
+}
+	 
+.labelAndInput.success i.fa-check-circle {
+		visibility: visible;
+		color:green;
+}
+
+.labelAndInput.error i.fa-times-circle {
+		visibility:visible;
+		color:red;
+}
+
+.labelAndInput.error small{
+		visibility:visible;
+}
+
+#homeButton{
+		background-color:  #ffad33;
+		color:black;
+		text-align: center;
+		border: solid;
+		border-radius: 10px;
+		font-size: 16px;
+		padding: 5px 16px;
+		float:right;
+		float:top;
+		position:absolute; top:10px; right:10px;
+		
+}
+
+.logo { 
+		width: 140px;
+		height: 140px;
+		background-color: black;
+		padding-left:5px;
+		padding-top:5px;
+
+	}
+
+.header{
+	background-color:#1c355e;
+}
+
+#phoneNumber{
+	color:white;
+	font-size: 20px;
+	position: relative;
+	padding-left:10px;
+	font-family:Comic Sans MS;
+}

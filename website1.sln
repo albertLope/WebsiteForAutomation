@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C35B9BEB-17BA-4F4D-8325-F84B52600110}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Style", "Style", "{321DE1C7-11F0-46F2-A158-137FB79D338D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTML", "HTML", "{A38DE027-C20F-4B9A-AB9B-767663264231}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicInfoForm", "BasicInfoForm", "{E2F25DE2-60D7-4935-AF55-E728BE274267}"
+	ProjectSection(SolutionItems) = preProject
+		aboutUs.css = aboutUs.css
+		aboutUs.html = aboutUs.html
+		contactUs.html = contactUs.html
+		contactUsCSS.css = contactUsCSS.css
+		contactUsThankYouPage.html = contactUsThankYouPage.html
+		formPage.html = formPage.html
+		index.js = index.js
+		style.css = style.css
+		ThankyouPage.html = ThankyouPage.html
+		thankyouPageCSS.css = thankyouPageCSS.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomePage", "HomePage", "{AF7F9787-B4A1-4CB4-A275-21199373D826}"
+	ProjectSection(SolutionItems) = preProject
+		HomePage.css = HomePage.css
+		HomePage.html = HomePage.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MortgageForm", "MortgageForm", "{9C450F81-B81E-4463-8C0E-DFD494D0CA29}"
+	ProjectSection(SolutionItems) = preProject
+		mortageFormFormPageCSS.css = mortageFormFormPageCSS.css
+		mortageFormFormPageJS.js = mortageFormFormPageJS.js
+		mortgageFormFormPage.html = mortgageFormFormPage.html
+		MortgageFormThankYouPage.css = MortgageFormThankYouPage.css
+		MortgageFormThankYouPage.html = MortgageFormThankYouPage.html
+		MortgageFormThankYouPageJS.js = MortgageFormThankYouPageJS.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SchoolForm", "SchoolForm", "{38E46DEA-18DE-4AAC-91BB-69F6B4B4E7D1}"
+	ProjectSection(SolutionItems) = preProject
+		SchoolForm.js = SchoolForm.js
+		SchoolFormPage1.html = SchoolFormPage1.html
+		SchoolFormPageCSS.css = SchoolFormPageCSS.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{321DE1C7-11F0-46F2-A158-137FB79D338D} = {C35B9BEB-17BA-4F4D-8325-F84B52600110}
+		{A38DE027-C20F-4B9A-AB9B-767663264231} = {C35B9BEB-17BA-4F4D-8325-F84B52600110}
+		{E2F25DE2-60D7-4935-AF55-E728BE274267} = {A38DE027-C20F-4B9A-AB9B-767663264231}
+		{AF7F9787-B4A1-4CB4-A275-21199373D826} = {A38DE027-C20F-4B9A-AB9B-767663264231}
+		{9C450F81-B81E-4463-8C0E-DFD494D0CA29} = {A38DE027-C20F-4B9A-AB9B-767663264231}
+		{38E46DEA-18DE-4AAC-91BB-69F6B4B4E7D1} = {A38DE027-C20F-4B9A-AB9B-767663264231}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA9C23AE-61BD-425D-8F01-84052B7BE3CC}
+	EndGlobalSection
+EndGlobal
