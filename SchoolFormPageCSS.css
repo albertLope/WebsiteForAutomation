@@ -8,9 +8,9 @@
 	margin-top: 40px;
 	margin-bottom: 100px;
 }
-
-select{
-	border:2px black solid;
+ 
+select,input{
+	border:1px black solid;
 }
  
 h4{
@@ -26,28 +26,27 @@ h4{
 #FormData{
 	padding-top:8%;
 	padding-bottom:20px;
-
 }
-
-.labelAndInput{
-
-
-}
+ 
 
 #sbmButton{
-	margin-bottom:10px;
-	margin-right:10px;
-	margin-top:10px;
-	float:right;
-	float:bottom;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left:75%;
 	padding: 10px;
 	background-color:#faef16;
 	border: 2px black solid;
 	border-radius: 10px;
+	transition: all 0.5s;
+	cursor: pointer;
+	padding-right:25px;
+	padding-left:25px;
+
 }
+ 
 
+ 
 #sbmButton:hover{
-
 	background-color:#fad764;
 }
 
@@ -55,30 +54,31 @@ h4{
 	background-color:#d1a411;
 }
 
-/*#sbmButton:active {
+/*
+#sbmButton:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(10px);
-}
+} 
 */
- 
+  
 
 #sbmButton span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
-}
-
+} 
+  
 #sbmButton  span:after {
-  content: '\00bb';
+  content: '\00BB';
   position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
-}
-
+} 
+  
 #sbmButton:hover span {
   padding-right: 25px;
 }
@@ -99,24 +99,24 @@ h4{
 }
 
 .labelAndInput i{
-		position: absoulute;
+		position: absolute;
 		color: #bd0808;
 		visibility:hidden;
-		padding-left: 10px;
+		padding-left:5px;
 }
 
 .labelAndInput small{
-		position: relative;
+		position: absolute;
 		visibility:hidden;
-		padding-left:20px;
+		
 }
 
 .labelAndInput.success input , .labelAndInput.success select{
-		border:1px green solid;
+		border:2px green solid;
 }
 
 .labelAndInput.error input, .labelAndInput.error select{
-		border:4px black solid;
+		border:2px red solid;
 }
 	 
 .labelAndInput.success>i.fa-check-circle {
@@ -129,6 +129,8 @@ h4{
 		color:red;
 }
 
-.labelAndInput.error>small{
+.labelAndInput.error>div>small{
 		visibility:visible;
+		position: relative;
+		margin:10px
 }

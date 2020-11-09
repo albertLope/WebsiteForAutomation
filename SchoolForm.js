@@ -46,9 +46,10 @@ submitButton.addEventListener('click', (e) => {
     e.preventDefault();
 
     var check = checkInputs();
+    console.log(check);
 
     if(check===true){
-        window.location.href = "ThankyouPage.html";
+        window.location.href = "SchoolFormPage2.html";
     }else{
         console.log("there is an error");
     }
@@ -78,7 +79,6 @@ function checkInputs() {
     var GenderBool = false;
     var YESRadioButtonBool = false;
     var NORadioButtonBool = false;
-    var GradeAndSchoolNameBool = false;
     var schoolNameBool = false; 
     var GradevalueBool = false; 
     
@@ -98,30 +98,14 @@ function checkInputs() {
          lNameBool =true;
     }
    
-    if(DOBDayvalue ==='Day') {
-        setErrorFor(DOBDay , '');
-        DOBDayBool =false;
-    }else { 
-        setSuccessFor(DOBDay);
-        DOBDayBool =true;
-    }
-
-    if(DOBMonthvalue ==='Month') {
-        setErrorFor(DOBMonth, 'DOB is not valid');
+    if(DOBDayvalue ==='Day' || DOBMonthvalue ==='Month' || DOBYearvalue ==='Year') {
+        setErrorFor(DOBDay , 'DOB is not valid');
         DOBMonthBool =false;
     }else { 
-        setSuccessFor(DOBMonth);
-         DOBMonthBool =true;
+        setSuccessFor(DOBDay);
+        DOBMonthBool =true;
     }
-
-    if(DOBYearvalue ==='Year' ) {
-        setErrorFor(DOBYear , 'DOB is not valid');
-        DOBYearBool = false;
-    }else { 
-        setSuccessFor(homePrice);
-        DOBYearBool = true;
-    }
-
+  
     if(Ethnic_Groupvalue === 'Group' ) {
         setErrorFor(Ethnic_Group, 'Select the ethnic group');
         Ethnic_GroupBool = false;
@@ -154,8 +138,12 @@ function checkInputs() {
         YESRadioButtonBool = false;
         NORadioButtonBool=true;
    }
+    
+   var yesNoResult = false; 
 
-   console.log(YESRadioButtonBool);
+   if(YESRadioButtonBool==true ||NORadioButtonBool ==true){
+    yesNoResult=true;
+   }
 
    if(YESRadioButtonBool==true){
          
@@ -196,14 +184,38 @@ function checkInputs() {
         }
 
     }
+
+    console.log("-------------------");
+    console.log(fNameBool);
+        console.log(lNameBool);
+            console.log(DOBMonthBool);
+        console.log(Ethnic_GroupBool);
+           console.log(GenderBool);
+        console.log(yesNoResult);
+          
+        console.log(schoolNameBool);
+            console.log(GradevalueBool);
   
-    if(fNameBool === false ||lNameBool === false ||DOBDayBool === false ||DOBMonthBool === false ||DOBYearBool === false ||Ethnic_GroupBool === false ||GenderBool === false||YESRadioButtonBool === false||NORadioButtonBool === false||GradeAndSchoolNameBool === false||schoolNameBool === false||GradevalueBool === false  ){
+    if(fNameBool === false ||lNameBool === false ||DOBMonthBool === false ||Ethnic_GroupBool === false ||GenderBool === false||yesNoResult === false){
 
         return false;
-    }else { 
+    }else {
+        console.log("cons 1");
+        console.log(YESRadioButtonBool);
+        console.log(schoolNameBool);
+        console.log(GradevalueBool);
+         
+        if(YESRadioButtonBool===true){
+            if(schoolNameBool === false || GradevalueBool === false){
+            console.log("cons 2");
+            return false;
+          }
+        }
         return true;
     }
      
+  
+   
 }
 
 function setErrorFor(input , message){
