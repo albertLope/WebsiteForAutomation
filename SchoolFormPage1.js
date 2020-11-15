@@ -40,7 +40,6 @@ const schoolName = document.getElementById("schoolName");
 const Grade = document.getElementById("Grade"); 
  
 const submitButton = document.getElementById("sbmButton");
-
   
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
@@ -196,6 +195,7 @@ function checkInputs() {
         console.log(schoolNameBool);
             console.log(GradevalueBool);
   
+       
     if(fNameBool === false ||lNameBool === false ||DOBMonthBool === false ||Ethnic_GroupBool === false ||GenderBool === false||yesNoResult === false){
 
         return false;
