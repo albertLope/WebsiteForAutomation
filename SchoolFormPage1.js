@@ -47,6 +47,13 @@ submitButton.addEventListener('click', (e) => {
     var check = checkInputs();
     console.log(check);
 
+    var allvalues = document.getElementsByClassName("formInput");
+
+     localStorage.setItem("firstName", allvalues[0].value);
+     localStorage.setItem("lastName", allvalues[1].value);
+
+      
+
     if(check===true){
         window.location.href = "SchoolFormPage2.html";
     }else{

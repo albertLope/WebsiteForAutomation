@@ -52,6 +52,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SchoolForm", "SchoolForm", 
 		SchoolFormPage2.html = SchoolFormPage2.html
 		SchoolFormPage2.js = SchoolFormPage2.js
 		SchoolFormPageCSS.css = SchoolFormPageCSS.css
+		SchoolFormThankYouPage.html = SchoolFormThankYouPage.html
+		SchoolFormThankYouPageJS.js = SchoolFormThankYouPageJS.js
 	EndProjectSection
 EndProject
 Global

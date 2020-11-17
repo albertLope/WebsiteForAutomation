@@ -10,6 +10,13 @@ sbmButton.addEventListener('click', (e) => {
     var check = checkInputs();
     console.log(check);
 
+    var paymentDropdwon = document.getElementById("paymentDropdwon");
+    var Department = document.getElementById("Department");
+
+     localStorage.setItem("cardName", paymentDropdwon.value);
+     localStorage.setItem("Department", Department.value);
+
+
     if(check===true){
         window.location.href = "SchoolFormThankYouPage.html";
     }else{
