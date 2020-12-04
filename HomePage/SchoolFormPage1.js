@@ -22,9 +22,7 @@ function makeTHeSchoolNameAndGradeUNVisible(){
     var element2 = document.getElementById("GradeAndSchoolName2");
 	element.className = "GradeAndSchoolName";
     element2.className = "GradeAndSchoolName2";
-}	
-
-
+}
 
 const firstName = document.getElementById("firstNameInput");
 const lastName = document.getElementById("LastNameInput");

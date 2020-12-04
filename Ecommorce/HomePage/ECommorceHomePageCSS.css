@@ -1,0 +1,144 @@
+.underHeader{
+	 position: relative;
+	 margin-bottom: 15%;
+}
+
+#underHeaderImage{
+	position: absolute;
+	width:95%;
+	display: block
+}
+
+.topLeft {
+  position: relative;
+  top: 20px;
+  left: 10%;
+}
+
+.contains{
+	margin-left: 20%;
+	width: 60%;
+	max-width: 90%;
+
+
+    display:block;
+    padding: 0;
+	box-sizing: border-box;
+	-webkit-box-shadow: 4px 2px 29px 2px rgba(212,212,214,1);
+    -moz-box-shadow: 4px 2px 29px 2px rgba(212,212,214,1);
+}
+
+#registrationForm{
+  margin-left : 10%;
+  margin-top : 3%;
+
+}
+
+.registrationFormLabel{
+	width: 100%;
+}
+
+.labelAndInput{
+  width:50%;
+  float:left;
+  position: relative;
+}
+
+ .infoBlocks{
+    float:left;
+    width:28%;
+    text-align:center;
+    margin-left: 3%;
+	margin-bottom: 5%;
+ }
+
+.registrationInputs{
+    border: 2px solid black;
+	margin-bottom:10px;
+ }
+
+ .hrHidden{
+	  visibility:hidden;
+	  position:relative;
+ }
+
+.wrapper{
+  position: relative;
+}
+ 
+#submitButton{
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  margin-left:40px; 
+  margin-top:30px;
+ 
+  
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 40px;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 3px solid #8C82FC;
+  background: #fff;
+  color: #8C82FC;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+#submitButton:hover{
+  background: #8C82FC;
+  color: #fff;
+}
+
+#submitButton span{
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s;
+}
+
+.success{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .35s;
+}
+
+.success svg{
+  width: 10px;
+  height: 10px;
+  fill: yellowgreen;
+  transform-origin: 50% 50%;
+  transform: translateY(-50%) rotate(0deg) scale(0);
+  transition: all .35s;
+}
+
+#submitButton.is_active{
+  width: 40px;
+  height: 40px;
+}
+
+#submitButton.is_active .success{
+  opacity: 1;
+  visibility: visible;
+}
+
+#submitButton.is_active .success svg{
+  margin-top: 50%;
+  transform: translateY(-50%) rotate(720deg) scale(1);
+}
+
+#submitButton.is_active span{
+  opacity: 0;
+  visibility: hidden;
+}
